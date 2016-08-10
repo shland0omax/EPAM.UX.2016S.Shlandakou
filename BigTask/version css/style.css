@@ -1,0 +1,641 @@
+@font-face {
+    font-family: MyriadPro;
+    src: url(fonts/MyriadPro-Regular.otf)
+}
+
+@font-face {
+    font-family: MyriadProBold;
+    src: url(fonts/MyriadPro-Bold.otf)
+}
+
+@font-face {
+    font-family: MyriadProCond;
+    src: url(fonts/MyriadPro-Cond.otf)
+}
+
+@font-face {
+    font-family: MyriadProLight;
+    src: url(fonts/MyriadPro-Light.otf)
+}
+
+* {
+    font-family: MyriadPro;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content{
+    padding-bottom: 90px;
+    width: 1349px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 51px;
+    margin-top: 38px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: MyriadProBold;
+    margin: 3px 0 0 0;
+}
+
+h1.name {
+    font-size: 136px;
+}
+
+h1 span{
+    font-family: MyriadProBold;
+    display: block;
+    font-size: 80px;
+    margin: -34px 0 0 5px;
+}
+
+h2{
+    font-family: MyriadProLight;
+    margin: 38px 0 0 0;
+}
+
+h2.web-graphic{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+h2 span{
+    font-family: MyriadProLight;
+    display: block;
+    font-weight: lighter;
+    font-size: 92px;
+    margin: -13px 0 0 -4px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 33px;
+    font-family: MyriadProBold;
+    border-left: solid 12px #601C6A;
+    line-height: 39px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h3.clause-heading {
+    padding: 2px 0 7px 16px;
+    text-overflow: ellipsis;
+}
+
+h3.experience{
+    font-size: 35px;
+    padding-top: 3px;
+    line-height: 37px;
+    font-family: MyriadProBold;
+}
+
+h3.work-together{
+    font-size: 35px;
+    padding-top: 4px;
+    line-height: 36px;
+    font-family: MyriadProBold;
+}
+
+ul.experience{
+    margin: 19px 0 0 6px;
+}
+
+ul.work-together{
+    margin: 2px 0 0 35px;
+}
+
+p.quote{
+    font-size: 16.9px;
+    margin: 23px 0 0 45px;
+    width: 470px;
+}
+
+p.quote::before,
+p.quote::after{
+    display: block;
+    content: "\201c";
+    font-family: Georgia;
+    font-size: 90px;
+    color: #601C6A;
+    height: 38px;
+    margin:-31px 0 23px -24px;
+}
+
+p.quote::after{
+    content: "\201d";
+    margin: 0px 0 16px 472px;
+}
+
+.list{
+    list-style-type: none;
+    padding-left: 8px;
+    margin: 13px 0;
+}
+
+.list.work-together{
+
+}
+
+li.edu-border{
+    border-left: solid 6px #601C6A;
+    padding-bottom: 32px;
+    margin-bottom: -15px;
+}
+
+
+
+p.edu-years{
+    font-family: MyriadProBold;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 0 0 70px 12px;
+    float: left;
+    line-height: 20px;
+}
+
+.triangle::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 11px solid #601C6A;
+    position: absolute;
+    margin: 3px 0 0 -12px;
+}
+
+
+
+.edu-border.last{
+    border-color: transparent;
+}
+
+div.edu-info{
+    margin: 0 0 0 170px;
+}
+
+h4{
+    font-family: MyriadProBold;
+    font-size: 28px;
+    line-height: 18px;
+    display: block;
+    margin: 0;
+}
+
+h4.school{
+    line-height: 40px;
+}
+
+p.description{
+    margin: -4px 0 0 0;
+    font-family: MyriadProBold;
+    font-size: 17px;
+    display: block;
+}
+
+li.reason{
+    font-family: MyriadProLight;
+    font-size: 23.3px;
+    line-height: 25px;
+}
+
+h5{
+    font-family: MyriadProBold;
+    font-size: 34px;
+    margin: 0;
+}
+
+h5 span{
+    font-family: MyriadPro;
+    font-weight: lighter;
+    font-size: 39.2px;
+    margin: -9px 0 0 0;
+}
+
+h5 span.hire{
+    display: block;
+}
+
+.point-circle::before{
+    content: "";
+    width: 43px;
+    height: 43px;
+    float: left;
+    border-radius: 50%;
+    background-color: #601C6A;
+    margin: 7px 0 0 1px ;
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    opacity: 0.2;
+    background-color: #601C6A;
+    position: absolute;
+}
+
+.circle.left{
+    left: -35px;
+    top: 108px;
+    background-image: url("pic/pc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.circle.right{
+    left: 76px;
+    top: 108px;
+    background-image: url("pic/smile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+label.contact{
+    font-family: MyriadProBold;
+    font-size: 22px;
+    font-weight: normal;
+    margin: -7px 0 0 57px;
+    display: block;
+}
+
+.work-head.right,
+.work-list-head.right ,
+.work-li.right{
+    text-align: right;
+}
+
+.work-li.right{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.work-play.right{
+    margin-left: 62px;
+}
+
+a.contact{
+    color: black;
+    text-decoration: none;
+}
+
+p.contact,
+a.contact{
+    margin-left: 13px;
+}
+
+.contacts{
+    margin: 13px 0 0 0;
+}
+
+.contact{
+    font-family: MyriadProLight;
+    font-size: 23px;
+    margin: 0 0 14px 0px;
+}
+
+h6.work-head{
+    font-family: MyriadProLight;
+    font-size: 32px;
+    margin: 1px 0 24px 0px;
+}
+
+.work-play{
+    float: left;
+}
+
+.work-play.left{
+    margin: 0 0 0 20px;
+}
+
+.work-play.middle{
+    position: relative;
+}
+
+.work-col{
+    margin: 0 0 47px 0;
+}
+
+.work-col.right{
+    margin: 0 0 22px 0;
+}
+
+.work-col.pull-back{
+    margin: -25px 0 0 0;
+}
+
+.work-li{
+    font-size: 23px;
+    margin: 0 0 0 0;
+    line-height: 34px;
+}
+
+.work-list-head{
+    font-family: MyriadProBold;
+    font-size: 24px;
+    margin: 0px 0 -3px 0;
+    font-weight: bolder;
+}
+
+.work-list-head.happiness{
+    font-size: 28px;
+    margin: 4px 0 0 30px;
+}
+
+.separator{
+    border-right: 3px dotted black;
+    height: 90%;
+    position: absolute;
+    left: 99px;
+    top: 41px;
+}
+
+.list.work{
+    padding-left: 1px;
+    margin: 2px 0;
+}
+
+.list.skills{
+    margin: 26px 0 0 0;
+}
+
+.skill-margin{
+    margin: 0 0 8px 0;
+    overflow: auto;
+}
+
+p.skill{
+    font-size: 22.4px;
+    margin: 0 0 0 17px;
+    float: left;
+    width: 40.9%;
+}
+
+.progress-background{
+    background-color: #FEDFFD;
+    width: 50%;
+    float: left;
+}
+
+#creativity, #social, #organisation, #communication, #team-player{
+    height: 20px;
+}
+
+#creativity{
+    width: 179px;
+}
+
+#social{
+    width: 254px;
+}
+
+#organisation{
+    width: 278px;
+}
+
+#communication{
+    width: 259px;
+}
+
+#team-player{
+    width: 229px;
+}
+
+label.percent{
+    float: left;
+    margin: 23px 0 0 26px;
+    font-size: 22px;
+}
+
+.plot{
+    float: left;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 6px 0 0 7px;
+    height: 370px;
+    overflow: hidden;
+}
+
+.bar{
+    float: left;
+    margin: 0px 9px 0 11px;
+    position: relative;
+    width: 47.5px;
+}
+
+#bar1{
+    height: 275px;
+    margin-top: 81px;
+}
+
+#bar2{
+    height: 299px;
+    margin-top: 57px;
+}
+
+#bar3{
+    height: 324px;
+    margin-top: 32px;
+}
+
+#bar4{
+    height:178px;
+    margin-top: 178px;
+}
+
+#bar5{
+    height: 299px;
+    margin-top: 57px;
+}
+
+#bar6{
+    height: 262px;
+    margin-top: 94px;
+}
+
+#bar7{
+    height: 167px;
+    margin-top: 189px;
+}
+
+.vertical-text{
+    font-size: 23px;
+    transform: rotate(270deg);
+}
+
+#bar1 p{
+    margin-top: 232px;
+    margin-left: 3px;
+}
+
+#bar2 p{
+    margin-top: 254px;
+    margin-left: 0px;
+}
+
+#bar3 p{
+    margin-top: 281px;
+    margin-left: 3px;
+}
+
+#bar4 p{
+    margin-top: 133px;
+    margin-left: 3px;
+}
+
+#bar5 p{
+    margin-top: 255px;
+    margin-left: 3px;
+}
+
+#bar6 p{
+    margin-top: 216px;
+    margin-left: 0px;
+}
+
+#bar7 p{
+    margin-top: 122px;
+    margin-left: 0px;
+}
+.white{
+    color: white;
+}
+
+.skill-categories{
+    float: left;
+    margin: 13px 0 0 100px;
+}
+
+.article{
+    width: 600px;
+    float: left;
+    margin-top: 50px;
+}
+
+.personal.article{
+    margin-top: 19px;
+}
+
+.education.article{
+    margin-top: 47px;
+}
+
+.experience.article{
+    margin-top: 75px;
+}
+
+.together.article{
+    margin-top: 80px;
+}
+
+.balance.article{
+    margin-top: 75px;
+}
+
+.contacts.article{
+    margin-top: 33px;
+    margin-left: 4.1%;
+}
+
+.skills.article{
+    margin-top: 42px;
+}
+
+.software.article{
+    margin-top: 49px;
+}
+
+.column {
+    float: left;
+    width: 47%;
+}
+
+.column.left{
+    padding-left: 6%;
+}
+
+.column.right{
+    margin:  0 0 0 0;
+}
+
+.flex-col{
+    display: flex;
+}
+
+p.definition{
+    float: left;
+    margin: 10px 46px 0 6px;
+    font-size: 22px;
+}
+
+p.definition.web{
+    margin: 10px 46px 0 13px;
+}
+
+div.definition{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.purple-elem {
+    color: #601C6A;
+}
+
+.gradient-light {
+    background: linear-gradient(to right, #601C6A, white, #601C6A);
+}
+
+.gradient-dark {
+    background: linear-gradient(to right, #94669a, #601C6A, #94669a);
+}
+
+.upper-text {
+    text-transform: uppercase;
+}
+
+.logo-wrapper{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    height: 51px;
+    margin: auto;
+    right: 0;
+    top:0;
+    left: -5px;
+}
+
+.leading{
+    margin-left: 3.6%;
+}
